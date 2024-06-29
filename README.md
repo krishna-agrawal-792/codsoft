@@ -58,3 +58,20 @@ User Interface:
 Users are prompted to input their choice (A, B, C, or D) for each question.
 After all questions are answered or time runs out for each, the displayResult() method is called to show the final score and summary of correct/incorrect answers.
 This Java program provides a basic framework for a quiz application with multiple-choice questions, a timer for each question, and scoring based on correct answers
+
+ATM INTERFACE EXPLANATION
+BankAccount Class:
+
+BankAccount class holds the balance attribute and methods deposit() and withdraw() to modify the balance based on user actions. It includes basic validation to ensure amounts are positive and sufficient balance exists for withdrawals.
+ATM Class:
+
+ATM class represents the user interface for the ATM. It connects with a BankAccount instance and allows users to check their balance, deposit money, and withdraw money. The start() method displays a menu using displayMenu() and executes corresponding methods based on user input.
+Methods like checkBalance(), deposit(), and withdraw() interact with the BankAccount instance to perform operations and provide feedback to the user.
+Main Method:
+
+In the main() method, a BankAccount instance is created with an initial balance. An ATM instance is then created with this BankAccount instance, and the ATM interface is started with atm.start().
+Usage:
+Compile and run the ATM class.
+Follow the prompts in the console to check balance, deposit money, withdraw money, or exit.
+The program handles user input and ensures that operations are performed correctly based on the current balance and provided amounts.
+This setup provides a basic ATM simulation where users can interactively manage their account balance through a console interface.
